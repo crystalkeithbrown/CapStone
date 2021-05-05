@@ -1,0 +1,90 @@
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  .content {
+    padding: 16px;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  body{
+      background-color:silver ;
+  }
+  .one{
+      font-weight: 100;
+      font-style: italic;
+      font-size: 100px;
+      text-align: left;
+      border:solid 3px black ;
+      border-radius:100px ;
+  }
+  .two{
+    font-style: italic ;
+    text-align: left;
+  }
+  .flex-container{
+      display: flex;
+      flex-wrap:wrap90 ;
+  }
+  .divone{
+      background-image: url(images/hand.jpg);
+  }
+  .p1{
+      font-size: larger;
+      font-weight: 100;
+      font-style: italic;
+      border: solid 3px black;
+  }
+  .p2{
+    font-size: larger;
+    font-weight: 100;
+    font-style: italic;
+    border: solid 3px black;
+  }
+  .p3{
+    font-size: larger;
+    font-weight: 100;
+    font-style: italic;
+    border: solid 3px black;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+      
